@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Smart Retail POS</string>
+    <string name="title_tahap1">Tahap 1: Debugging &amp; Timber Logging</string>
+    <string name="subtitle_tahap1">Simulasi Kalkulasi Kasir dengan Defensive runCatching</string>
+    <string name="title_tahap2">Tahap 2: Terminal Kasir POS Mandiri</string>
+    <string name="subtitle_tahap2">Simulasi Transaksi Berketahanan Tinggi (Resilient POS)</string>
+</resources>

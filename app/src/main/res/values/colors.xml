@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <!-- Brand Palette (Teal & Emerald) -->
+    <color name="pos_primary">#0D9488</color>
+    <color name="pos_primary_dark">#0F766E</color>
+    <color name="pos_primary_light">#CCFBF1</color>
+    <color name="pos_primary_variant">#14B8A6</color>
+
+    <!-- Neutral & Backgrounds -->
+    <color name="pos_bg">#F8FAFC</color>
+    <color name="pos_card_bg">#FFFFFF</color>
+    <color name="pos_stroke">#E2E8F0</color>
+
+    <!-- Text Palette -->
+    <color name="pos_text_dark">#0F172A</color>
+    <color name="pos_text_medium">#334155</color>
+    <color name="pos_text_muted">#64748B</color>
+    <color name="pos_text_subtle">#94A3B8</color>
+
+    <!-- Status Colors -->
+    <color name="pos_success">#16A34A</color>
+    <color name="pos_success_bg">#DCFCE7</color>
+    <color name="pos_error">#DC2626</color>
+    <color name="pos_error_dark">#991B1B</color>
+    <color name="pos_error_bg">#FEE2E2</color>
+    <color name="pos_warning">#D97706</color>
+    <color name="pos_warning_bg">#FEF3C7</color>
+    <color name="pos_accent">#0284C7</color>
+</resources>
