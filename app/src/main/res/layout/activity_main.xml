@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_bg"
+    android:fillViewport="true"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <!-- Top Header Card -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_card_white"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_badge_method"
+                android:text="MODUL PRAKTIKUM 11"
+                android:textColor="@color/blue_700"
+                android:textSize="11sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Fintech Billing Engine"
+                android:textColor="@color/slate_900"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="JSON Parsing, Kotlin Data Class DTO, &amp; E-Receipt Invoicing"
+                android:textColor="@color/slate_500"
+                android:textSize="13sp" />
+        </LinearLayout>
+
+        <!-- Section 1: Tahap 1 Dasar -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/bg_card_white"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tahap 1: Deserialisasi Dasar"
+                android:textColor="@color/slate_900"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="Konversi raw payload JSON ke objek Kotlin Merchant.kt menggunakan Google Gson."
+                android:textColor="@color/slate_500"
+                android:textSize="12sp" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnParseBasic"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:layout_marginTop="16dp"
+                android:backgroundTint="@color/brand_primary"
+                android:insetTop="0dp"
+                android:insetBottom="0dp"
+                android:text="Uji Coba Parsing JSON Merchant"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                app:cornerRadius="12dp" />
+
+            <!-- Output Box -->
+            <TextView
+                android:id="@+id/tvOutputBasic"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="14dp"
+                android:background="@drawable/bg_output_box"
+                android:fontFamily="monospace"
+                android:lineSpacingExtra="4dp"
+                android:text="// Klik tombol di atas untuk menjalankan parsing JSON Merchant..."
+                android:textColor="@color/code_box_text"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <!-- Section 2: Tahap 2 & Tugas Mandiri (Navigasi Invoice) -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/bg_card_white"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:src="@drawable/ic_receipt" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="12dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Tahap 2: E-Invoice Transaksi"
+                        android:textColor="@color/slate_900"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp"
+                        android:text="JSON 3-Lapis, Nested Objects, &amp; Tugas Mandiri 1 &amp; 2"
+                        android:textColor="@color/slate_500"
+                        android:textSize="12sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="14dp"
+                android:layout_marginBottom="14dp"
+                android:background="@color/slate_200" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Fitur Lengkap:"
+                android:textColor="@color/slate_700"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:lineSpacingExtra="2dp"
+                android:text="• Parsing Root DTO, Merchant, Customer, &amp; InvoiceItem\n• Defensive Nullable Handling (Voucher Code &amp; Diskon Promo)\n• Custom Indonesian Date Formatting (WIB)"
+                android:textColor="@color/slate_600"
+                android:textSize="12sp" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnOpenInvoice"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:layout_marginTop="16dp"
+                android:backgroundTint="@color/slate_900"
+                android:insetTop="0dp"
+                android:insetBottom="0dp"
+                android:text="Buka E-Invoice Transaksi"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                app:cornerRadius="12dp"
+                app:icon="@drawable/ic_arrow_forward"
+                app:iconGravity="textEnd"
+                app:iconTint="@color/white" />
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>
