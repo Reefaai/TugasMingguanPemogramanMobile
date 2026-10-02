@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <!-- Soft Sea Blue Material Palette -->
+    <color name="sea_blue_primary">#0EA5E9</color>
+    <color name="sea_blue_primary_dark">#0284C7</color>
+    <color name="sea_blue_primary_container">#E0F2FE</color>
+    <color name="sea_blue_on_primary_container">#0369A1</color>
+    <color name="sea_blue_secondary">#38BDF8</color>
+    <color name="sea_blue_bg">#F4F9FF</color>
+    <color name="sea_blue_surface">#FFFFFF</color>
+    <color name="sea_blue_card_border">#E0F2FE</color>
+
+    <!-- Soft Text Colors -->
+    <color name="text_dark_primary">#1E293B</color>
+    <color name="text_dark_secondary">#64748B</color>
+    <color name="text_muted">#94A3B8</color>
+
+    <!-- Soft Error State Colors -->
+    <color name="error_bg">#FFF1F2</color>
+    <color name="error_border">#FECDD3</color>
+    <color name="error_text">#E11D48</color>
+</resources>
