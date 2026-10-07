@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <!-- Brand Palette (Slate & Royal Blue) -->
+    <color name="brand_dark">#0F172A</color>
+    <color name="brand_header">#1E293B</color>
+    <color name="brand_primary">#2563EB</color>
+    <color name="brand_primary_dark">#1D4ED8</color>
+    <color name="brand_primary_light">#DBEAFE</color>
+
+    <!-- Backgrounds -->
+    <color name="bg_scaffold">#F1F5F9</color>
+    <color name="bg_card">#FFFFFF</color>
+    <color name="border_card">#E2E8F0</color>
+    <color name="bg_search_input">#334155</color>
+
+    <!-- Typography -->
+    <color name="text_primary">#0F172A</color>
+    <color name="text_secondary">#475569</color>
+    <color name="text_muted">#94A3B8</color>
+
+    <!-- Delivery Status Palettes -->
+    <!-- PENDING (Warm Amber) -->
+    <color name="badge_pending_bg">#FEF3C7</color>
+    <color name="badge_pending_text">#B45309</color>
+    <color name="badge_pending_stroke">#FDE68A</color>
+
+    <!-- IN_DELIVERY (Vibrant Sky Blue) -->
+    <color name="badge_delivery_bg">#E0F2FE</color>
+    <color name="badge_delivery_text">#0369A1</color>
+    <color name="badge_delivery_stroke">#BAE6FD</color>
+
+    <!-- DELIVERED (Success Emerald) -->
+    <color name="badge_delivered_bg">#DCFCE7</color>
+    <color name="badge_delivered_text">#15803D</color>
+    <color name="badge_delivered_stroke">#BBF7D0</color>
+
+    <!-- COD Accent -->
+    <color name="cod_text">#0F766E</color>
+    <color name="cod_bg">#CCFBF1</color>
+</resources>

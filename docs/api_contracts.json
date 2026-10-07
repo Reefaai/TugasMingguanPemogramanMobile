@@ -1,0 +1,64 @@
+{
+  "project": "FleetTrackPro",
+  "version": "1.0.0",
+  "base_url": "https://mock-api.fleettrack.id/",
+  "endpoints": [
+    {
+      "name": "Get Today Courier Manifest",
+      "method": "GET",
+      "path": "/api/v1/courier/manifest/today",
+      "description": "Mengambil daftar seluruh manifest tugas pengiriman harian kurir",
+      "response": {
+        "status": 200,
+        "content_type": "application/json",
+        "example": [
+          {
+            "order_id": "ORD-2026-8801",
+            "tracking_number": "EXP-90021-JKT",
+            "recipient_name": "Ibu Ratna Dewi",
+            "recipient_phone": "081234567890",
+            "destination_address": "Jl. Melati Raya No. 45, Harjamukti, Cirebon",
+            "cod_amount": 125000.0,
+            "status": "PENDING"
+          },
+          {
+            "order_id": "ORD-2026-8802",
+            "tracking_number": "EXP-90022-BDG",
+            "recipient_name": "Pak Bambang Sutrisno",
+            "recipient_phone": "081398765432",
+            "destination_address": "Jl. Kesambi No. 12, Pekalipan, Cirebon",
+            "cod_amount": 0.0,
+            "status": "PENDING"
+          },
+          {
+            "order_id": "ORD-2026-8803",
+            "tracking_number": "EXP-90023-CRB",
+            "recipient_name": "Sdr. Dimas Prasetyo",
+            "recipient_phone": "085712349988",
+            "destination_address": "Perum Citra Garden Blok B-3, Kedawung",
+            "cod_amount": 75000.0,
+            "status": "PENDING"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Update Delivery Status",
+      "method": "POST",
+      "path": "/api/v1/courier/deliveries/{order_id}/status?status=DELIVERED",
+      "description": "Memperbarui status pengiriman paket kurir ke server pusat",
+      "parameters": {
+        "order_id": "String (Path)",
+        "status": "String (Query, e.g. DELIVERED, FAILED)"
+      },
+      "response": {
+        "status": 200,
+        "content_type": "application/json",
+        "example": {
+          "success": true,
+          "message": "Status pengiriman berhasil diperbarui ke server pusat."
+        }
+      }
+    }
+  ]
+}
